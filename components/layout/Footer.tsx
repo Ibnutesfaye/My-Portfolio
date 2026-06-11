@@ -4,10 +4,10 @@ import { Github, Linkedin, Mail, ArrowUp, Send } from "lucide-react";
 import { NAV_ITEMS } from "@/data";
 
 const SOCIALS = [
-  { icon: Github, href: "https://github.com/abdurezak", label: "GitHub" },
+  { icon: Github, href: "https://github.com/ibnutesfaye", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/abdurezak", label: "LinkedIn" },
-  { icon: Send, href: "https://t.me/abdurezak", label: "Telegram" },
-  { icon: Mail, href: "mailto:abdurezak@email.com", label: "Email" },
+  { icon: Send, href: "https://t.me/A_B_D_U_R_E_Z_A_Q", label: "Telegram" },
+  { icon: Mail, href: "mailto:abdurezaktesfaye998@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -72,10 +72,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:abdurezak@email.com"
+                  href="mailto:abdurezaktesfaye998@gmail.com"
                   className="text-gray-500 text-sm hover:text-primary transition-colors font-mono"
                 >
-                  abdurezak@email.com
+                  abdurezaktesfaye998@gmail.com
                 </a>
               </li>
               <li className="text-gray-500 text-sm">

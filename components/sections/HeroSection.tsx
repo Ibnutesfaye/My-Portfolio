@@ -135,10 +135,10 @@ function ParticleCanvas() {
 }
 
 const SOCIALS = [
-  { icon: Github, href: "https://github.com/abdurezak", label: "GitHub" },
+  { icon: Github, href: "https://github.com/ibnutesfaye", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/abdurezak", label: "LinkedIn" },
-  { icon: Send, href: "https://t.me/abdurezak", label: "Telegram" },
-  { icon: Mail, href: "mailto:abdurezak@email.com", label: "Email" },
+  { icon: Send, href: "https://t.me/A_B_D_U_R_E_Z_A_Q", label: "Telegram" },
+  { icon: Mail, href: "mailto:abdurezaktesfaye998@gmail.com", label: "Email" },
 ];
 
 const BADGES = [

@@ -6,15 +6,15 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import MagneticButton from "@/components/ui/MagneticButton";
 
 const CONTACT_INFO = [
-  { icon: Mail, label: "Email", value: "abdurezak@email.com", href: "mailto:abdurezak@email.com" },
-  { icon: Phone, label: "Phone", value: "+251 91 234 5678", href: "tel:+251912345678" },
+  { icon: Mail, label: "Email", value: "abdurezaktesfaye998@gmail.com", href: "mailto:abdurezaktesfaye998@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+251 92 429 3163", href: "tel:+251924293163" },
   { icon: MapPin, label: "Location", value: "Addis Ababa, Ethiopia", href: "#" },
 ];
 
 const SOCIALS = [
-  { icon: Github, label: "GitHub", href: "https://github.com/abdurezak" },
+  { icon: Github, label: "GitHub", href: "https://github.com/ibnutesfaye" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/abdurezak" },
-  { icon: Send, label: "Telegram", href: "https://t.me/abdurezak" },
+  { icon: Send, label: "Telegram", href: "https://t.me/A_B_D_U_R_E_Z_A_Q" },
 ];
 
 type Status = "idle" | "loading" | "success" | "error";
