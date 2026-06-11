@@ -329,7 +329,7 @@ export default function HeroSection() {
               {/* Image */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/40 shadow-2xl shadow-primary/20">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/My-Portfolio/images/profile.jpg"
                   alt="Abdurezak Profile"
                   fill
                   sizes="(max-width: 768px) 256px, 320px"

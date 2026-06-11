@@ -45,7 +45,7 @@ export default function AboutSection() {
               {/* Image */}
               <div className="w-full h-full rounded-2xl overflow-hidden glass border border-white/10 relative">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/My-Portfolio/images/profile.jpg"
                   alt="Abdurezak About Profile"
                   fill
                   sizes="(max-width: 768px) 384px, 384px"
