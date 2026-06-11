@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ibnutesfaye.github.io/My-Portfolio"),
   title: "Abdurezak | Full Stack Developer & AI Engineer",
   description:
     "Personal portfolio of Abdurezak — Full Stack Developer, AI Engineer, and Network Specialist building intelligent software systems and beautiful digital experiences.",

@@ -269,7 +269,7 @@ export default function HeroSection() {
               className="flex flex-wrap gap-4 mb-10"
             >
               <MagneticButton
-                href="/resume.pdf"
+                href="/My-Portfolio/resume.pdf"
                 variant="primary"
                 className="gap-2 px-6 py-3"
               >
