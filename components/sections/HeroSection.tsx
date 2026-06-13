@@ -20,21 +20,27 @@ function TypeWriter() {
 
   useEffect(() => {
     const role = ROLES[roleIdx];
-    const speed = deleting ? 40 : 90;
+    
+    if (!deleting && text === role) {
+      const timeout = setTimeout(() => setDeleting(true), 1800);
+      return () => clearTimeout(timeout);
+    }
 
+    if (deleting && text === "") {
+      setDeleting(false);
+      setRoleIdx((prev) => (prev + 1) % ROLES.length);
+      return;
+    }
+
+    const speed = deleting ? 40 : 90;
     const timeout = setTimeout(() => {
-      if (!deleting) {
-        setText(role.slice(0, text.length + 1));
-        if (text.length + 1 === role.length) {
-          setTimeout(() => setDeleting(true), 1800);
+      setText((prev) => {
+        if (deleting) {
+          return prev.slice(0, -1);
+        } else {
+          return role.slice(0, prev.length + 1);
         }
-      } else {
-        setText(role.slice(0, text.length - 1));
-        if (text.length === 0) {
-          setDeleting(false);
-          setRoleIdx((i) => (i + 1) % ROLES.length);
-        }
-      }
+      });
     }, speed);
 
     return () => clearTimeout(timeout);
