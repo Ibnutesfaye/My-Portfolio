@@ -210,7 +210,7 @@ export default function HeroSection() {
               transition={{ delay: 0.9, duration: 0.5 }}
               className="text-gray-400 text-lg mb-3 font-mono"
             >
-              Hi there 👋, I&apos;m
+              Hi, I&apos;m
             </motion.p>
 
             {/* Name */}
@@ -220,7 +220,7 @@ export default function HeroSection() {
               transition={{ delay: 1.0, duration: 0.6 }}
               className="text-5xl md:text-7xl font-bold font-display text-white mb-4 leading-none"
             >
-              Abdurezak
+              Abdurezak Tesfaye
             </motion.h1>
 
             {/* Typewriter */}
@@ -269,7 +269,7 @@ export default function HeroSection() {
               className="flex flex-wrap gap-4 mb-10"
             >
               <MagneticButton
-                href="/My-Portfolio/resume.pdf"
+                href="/My-Portfolio/Abdurezak_Tesfaye_ATS_Resume.pdf"
                 variant="primary"
                 className="gap-2 px-6 py-3"
               >
