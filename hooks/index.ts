@@ -104,7 +104,14 @@ export function useTheme() {
 
   useEffect(() => {
     const stored = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (stored) setTheme(stored);
+    if (stored) {
+      setTheme(stored);
+      document.documentElement.classList.toggle("light", stored === "light");
+      document.documentElement.classList.toggle("dark", stored === "dark");
+    } else {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+    }
   }, []);
 
   const toggle = useCallback(() => {
@@ -112,6 +119,7 @@ export function useTheme() {
       const next = prev === "dark" ? "light" : "dark";
       localStorage.setItem("theme", next);
       document.documentElement.classList.toggle("light", next === "light");
+      document.documentElement.classList.toggle("dark", next === "dark");
       return next;
     });
   }, []);

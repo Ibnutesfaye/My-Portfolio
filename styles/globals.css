@@ -201,8 +201,107 @@ body:has(button:hover) .cursor-ring {
 /* Light mode overrides */
 .light {
   --bg: #f8fafc;
-  --surface: rgba(0, 0, 0, 0.04);
+  --surface: rgba(255, 255, 255, 0.45);
   --border: rgba(0, 0, 0, 0.08);
   --text-primary: #0f172a;
-  --text-secondary: #64748b;
+  --text-secondary: #475569;
+}
+
+.light .glass {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.light .glass-strong {
+  background: rgba(255, 255, 255, 0.80);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.light .text-white {
+  color: var(--text-primary) !important;
+}
+
+.light .text-gray-300,
+.light .text-gray-400,
+.light .text-gray-500,
+.light .text-gray-600 {
+  color: var(--text-secondary) !important;
+}
+
+.light .hover\:text-white:hover {
+  color: var(--text-primary) !important;
+}
+
+.light .group-hover\:text-white:hover,
+.light .group:hover .group-hover\:text-white {
+  color: var(--text-primary) !important;
+}
+
+/* Maintain white text on elements with primary/secondary colored backgrounds (e.g. primary buttons, tags) */
+.light .bg-primary,
+.light [class*="bg-primary"],
+.light [class*="bg-gradient"] {
+  color: #ffffff !important;
+}
+
+.light .bg-primary .text-white,
+.light .bg-primary.text-white,
+.light [class*="bg-primary"] .text-white,
+.light [class*="bg-primary"].text-white,
+.light [class*="bg-gradient"] .text-white,
+.light [class*="bg-gradient"].text-white {
+  color: #ffffff !important;
+}
+
+/* Override borders to use subtle dark border in light mode */
+.light .border-white\/10,
+.light .border-white\/20,
+.light .border-white\/8,
+.light .border-white\/5 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Inputs and textareas styling in light mode */
+.light input,
+.light textarea {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  color: var(--text-primary) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.light input:focus,
+.light textarea:focus {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-color: var(--primary) !important;
+}
+
+/* Ensure placeholder is visible and readable */
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Fix bg-background in light mode */
+.light .bg-background {
+  background-color: var(--bg) !important;
+}
+
+/* Fix to-background gradient terminators in light mode */
+.light .to-background {
+  --tw-gradient-to: var(--bg) !important;
+}
+.light .from-background {
+  --tw-gradient-from: var(--bg) !important;
+}
+.light .via-background {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--bg), var(--tw-gradient-to) !important;
+}
+
+/* Hover backgrounds overlay overrides */
+.light .hover\:bg-white\/5:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Progress bar track */
+.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.08) !important;
 }
