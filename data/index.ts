@@ -261,7 +261,7 @@ export const CERTIFICATES: Certificate[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "1",
-    name: "Sarah Johnson",
+    name: "Ashenafi Girma",
     position: "CTO",
     company: "TechVentures Inc.",
     avatar: "/images/avatar1.jpg",
@@ -270,7 +270,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Michael Chen",
+    name: "Abdi Bekele",
     position: "Product Manager",
     company: "HealthAI Labs",
     avatar: "/images/avatar2.jpg",
@@ -279,7 +279,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Fatima Al-Hassan",
+    name: "Cherinet Birahnu",
     position: "Lead Developer",
     company: "CodeForward Agency",
     avatar: "/images/avatar3.jpg",
